@@ -45,7 +45,7 @@ section{
 .logo{
     font-size: 3rem;
     color: var(--main-color);
-    margin-right:460px;
+    margin-right:400px;
     font-weight: 600;
     cursor: default;
 }
@@ -122,7 +122,7 @@ margin-bottom: 2rem;
     color: var(--send-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
-.btn_resume{
+.btn{
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
@@ -133,6 +133,205 @@ margin-bottom: 2rem;
     font-weight: 600;
     transition: 0.5 ease;
 }
-.btn_resume:hover{
+.btn:hover{
     box-shadow: none;
+}
+/* About Section */
+.about-content{
+justify-items: center;
+}
+.about{
+    display: flex;
+    /* justify-items:center; */
+    gap:3rem;
+    background: var(--send-bg-color);
+}
+.about-img img{
+    height: 350px;
+    width: 250px;
+    border: 2px solid #0f83b9;
+    border-radius: 10px;
+}
+.heading{
+    text-align: center;
+    font-size: 3rem;
+}
+.heading span{
+    color: var(--main-color);
+    font-size: 2.6rem;
+
+}
+.about-content h2{
+   text-align: left;
+   line-height: 1.2rem;
+ }
+.about-content h3{
+    margin-top: 1rem;
+   font-size: 2.6rem;
+}
+.about-content p{
+ font-size: 1.6rem;
+ margin: 2rem 0 3rem;
+}
+/* Services */
+.services h2{
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+.services .headingServ span{
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.service-container .services-box{
+    flex: 1 1 30rem;
+    background:var(--send-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem soloid var(--bg-color);
+    transition: 0.5rem ease;
+}
+.service-container .services-box:hover{
+    
+    border-color:var(--main-color);
+    transform: scale(1.02);
+}
+.services-box i{
+    font-size: 4.8rem;
+    color: var(--main-color);
+}
+.services-box h3{
+ font-size: 2.3rem;
+ margin: 1rem 0 3rem;
+}
+.services-box p{
+font-size:1.6rem;
+ margin: 1rem 0 3rem;
+}
+/* Projects section */
+.projects{
+    background: var(--send-bg-color);
+}
+.projects h2{
+    margin-bottom: 4rem;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.project-container .project-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+.project-box img{
+    width:350px;
+    height:390px;
+    transition: 0.5 ease;
+    opacity: 0.7;
+}
+.project-box .project-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1),var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5 ease;
+}
+.project-box:hover .project-layer{
+    transform: translateY(0);
+}
+.project-layer h4{
+    font-size: 3rem;
+    margin: 0.3rem 0 1rem;
+}
+.project-layer p{
+    font-size:1.2rem;
+}
+.project-layer{
+    font-size: 2rem;
+    margin: 1.5rem;
+    color: var(--send-bg-color);
+}
+/* contact section */
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding:1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background:var(--send-bg-color);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+/* footer section */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:2rem 9%;
+    background-color: var(--send-bg-color);
+}
+.footer-text p{
+    font-size: 1.5rem;
+}
+.icon-top{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0.8rem 1rem;
+   background-color: var(--main-color);
+   border-radius: 0.8rem;
+   transition: 0.5 ease;
+}
+.icon-top a:hover{
+    box-shadow: 0 0 2rem var(--main-color);
+}
+.icon-top a i{
+    font-size: 2.4rem;
+    color: var(--send-bg-color);
 }
