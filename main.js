@@ -11,3 +11,12 @@ ScrollReveal({
     dealay:200,
 });
 ScrollReveal().reveal('.home-content,heading',{origin:'top'})
+
+// responsive
+let icon=document.querySelector('#menu-icon');
+let navbar=document.querySelector('.navbar');
+
+icon.onclick=()=>{
+    icon.classList.toggle('fa-xmark');
+    navbar.classList.toggle('active');
+}
