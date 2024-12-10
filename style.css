@@ -341,7 +341,7 @@ font-size:1.6rem;
     color: var(--text-color);
     display: none;
 }
-/* Responsiveness
+/* Responsiveness */
 @media(max-width:1200px){
     html{
         font-size: 55%;
@@ -376,7 +376,7 @@ font-size:1.6rem;
     .footer{
         padding: 2rem 3%;
     }
-} */
+} 
 @media(max-width:765px){
     .header{
        margin-left: 3rem;
