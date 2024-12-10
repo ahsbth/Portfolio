@@ -45,7 +45,7 @@ section{
 .logo{
     font-size: 3rem;
     color: var(--main-color);
-    margin-right:400px;
+    margin-right:124px;
     font-weight: 600;
     cursor: default;
 }
@@ -338,6 +338,7 @@ font-size:1.6rem;
 
 #menu-icon{
     font-size: 3.6rem;
+    margin-right: 10rem;
     color: var(--text-color);
     display: none;
 }
@@ -359,7 +360,10 @@ font-size:1.6rem;
 }
 @media(max-width:900px){
     .header{
-        padding: 3rem 3%;
+        padding: 1rem 3%;
+    }
+    .logo{
+        margin-left: 5rem;
     }
     section{
         padding: 10rem 3%;
@@ -378,9 +382,9 @@ font-size:1.6rem;
     }
 } 
 @media(max-width:765px){
-    .header{
-       margin-left: 3rem;
-    }
+    /* .header{
+       margin-left:10rem;
+    } */
     #menu-icon{
         display: block;
     }
