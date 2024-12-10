@@ -378,8 +378,14 @@ font-size:1.6rem;
     }
 }
 @media(max-width:580px){
+    .header{
+       margin-left: 3rem;
+       /* margin-right: 3rem; */
+    }
     #menu-icon{
         display: block;
+        
+        margin-right: 3rem;
     }
     .navbar{
         position: absolute;
